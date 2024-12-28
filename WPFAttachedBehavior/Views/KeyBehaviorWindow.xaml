@@ -1,0 +1,84 @@
+﻿<Window
+    x:Class="WPFAttachedBehavior.Views.KeyBehaviorWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="clr-namespace:XioaAttachedBehavior.Behaviors;assembly=AttachedBehavior"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPFAttachedBehavior.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="KeyBehaviorWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <TextBox
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:PreviewKeyDownBehavior.Command="{Binding MyCommand}"
+                    behaviors:PreviewKeyDownBehavior.CommandParameter="参数">
+                    在按下键之前发生
+                </TextBox>
+                <TextBox
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:KeyDownBehavior.Command="{Binding MyCommand}"
+                    behaviors:KeyDownBehavior.CommandParameter="参数">
+                    在按下键时发生
+                </TextBox>
+                <TextBox
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:KeyDownBehavior.Command="{Binding MyCommand}"
+                    behaviors:KeyDownBehavior.Key="Enter">
+                    在按下键时发生 只响应特定按键Enter
+                </TextBox>
+                <TextBox
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:PreviewKeyUpBehavior.Command="{Binding MyCommand}"
+                    behaviors:PreviewKeyUpBehavior.CommandParameter="参数">
+                    在释放键之前发生
+                </TextBox>
+                <TextBox
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:PreviewKeyUpBehavior.Command="{Binding MyCommand}"
+                    behaviors:PreviewKeyUpBehavior.CommandParameter="参数"
+                    behaviors:PreviewKeyUpBehavior.Key="Enter">
+                    在释放键之前发生 只响应特定按键Enter
+                </TextBox>
+                <TextBox
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:KeyUpBehavior.Command="{Binding MyCommand}"
+                    behaviors:KeyUpBehavior.CommandParameter="参数">
+                    在释放键时发生
+                </TextBox>
+                <TextBox
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:KeyUpBehavior.Command="{Binding MyCommand}"
+                    behaviors:KeyUpBehavior.CommandParameter="参数"
+                    behaviors:KeyUpBehavior.Key="Enter">
+                    在释放键时发生 只响应特定按键Enter
+                </TextBox>
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock
+            Margin="10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            FontSize="20"
+            Foreground="Red"
+            Text="{Binding Id}" />
+    </Grid>
+</Window>

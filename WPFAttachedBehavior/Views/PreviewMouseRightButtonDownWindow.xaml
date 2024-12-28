@@ -1,0 +1,183 @@
+﻿<Window
+    x:Class="WPFAttachedBehavior.Views.PreviewMouseRightButtonDownWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="clr-namespace:XioaAttachedBehavior.Behaviors;assembly=AttachedBehavior"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPFAttachedBehavior.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="PreviewMouseRightButtonDownWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel>
+            <Button
+                Width="500"
+                Height="40"
+                Margin="10"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数1"
+                Background="Gray">
+                Preview Button
+            </Button>
+            <TextBlock
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数2"
+                Background="Gray"
+                LineHeight="30"
+                LineStackingStrategy="BlockLineHeight"
+                TextAlignment="Center">
+                TextBlock
+            </TextBlock>
+            <Border
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数2"
+                Background="Gray">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                    Border
+                </TextBlock>
+            </Border>
+            <Grid
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数2"
+                Background="Gray">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                    Grid
+                </TextBlock>
+            </Grid>
+            <StackPanel
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数2"
+                Background="Gray">
+                <Border
+                    Margin="0,12"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <TextBlock>
+                        StackPanel
+                    </TextBlock>
+                </Border>
+            </StackPanel>
+
+            <ComboBox
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数2"
+                Background="Gray"
+                Text=" StackPanel" />
+
+            <TextBox
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数3"
+                Background="Gray"
+                Text=" TextBox" />
+
+            <CheckBox
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数4"
+                Background="Gray"
+                Content=" CheckBox" />
+
+            <RadioButton
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数5"
+                Background="Gray"
+                Content=" RadioButton" />
+
+            <ListBox
+                Width="500"
+                Height="80"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数6"
+                Background="Gray">
+                <ListBoxItem Content="ListBox Item 1" />
+                <ListBoxItem Content="ListBox Item 2" />
+                <ListBoxItem Content="ListBox Item 3" />
+            </ListBox>
+
+            <DatePicker
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数7"
+                Background="Gray" />
+
+            <Slider
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数8"
+                Background="Gray"
+                Maximum="100"
+                Minimum="0" />
+
+            <ProgressBar
+                Width="500"
+                Height="40"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                behaviors:PreviewMouseRightButtonDownBehavior.Command="{Binding MyCommand}"
+                behaviors:PreviewMouseRightButtonDownBehavior.CommandParameter="参数9"
+                Background="Gray"
+                Value="50" />
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>

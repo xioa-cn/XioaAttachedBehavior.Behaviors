@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\ClickBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\KeyBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MouseEnterBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MouseLeaveBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MouseLeftButtonDownBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MouseLeftButtonUpWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MouseMoveBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MouseRightButtonDownBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MouseRightButtonUpBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreviewMouseLeftButtonDownBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreviewMouseLeftButtonUpBehaviorWIndow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreviewMouseMoveBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreviewMouseRightButtonDownWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreviewMouseRightButtonUpBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ClickBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\KeyBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MouseEnterBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MouseLeaveBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MouseLeftButtonDownBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MouseLeftButtonUpWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MouseMoveBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MouseRightButtonDownBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MouseRightButtonUpBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreviewMouseLeftButtonDownBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreviewMouseLeftButtonUpBehaviorWIndow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreviewMouseMoveBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreviewMouseRightButtonDownWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreviewMouseRightButtonUpBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
