@@ -1,4 +1,4 @@
-# WPF 附加行为库
+# Xioa.WPF.AttachedBehaviors  WPF附加行为库
 
 这是一个用于 WPF 的附加行为（Attached Behavior）库，提供了一系列可重用的行为来处理常见的 UI 交互场景。
 
@@ -29,6 +29,32 @@
 - `LoadedBehavior` - 控件加载
 - `UnloadedBehavior` - 控件卸载
 - `SizeChangedBehavior` - 尺寸改变
+
+## 安装
+
+
+
+通过 NuGet 包管理器安装：
+
+
+
+```dotnet
+
+dotnet add package Xioa.WPF.AttachedBehaviors --version 1.0.0
+
+```
+
+
+
+或者在 Visual Studio 的包管理器控制台中执行：
+
+
+
+```powershell
+
+Install-Package Xioa.WPF.AttachedBehaviors -Version 1.0.0
+
+```
 
 ## 使用方法
 
