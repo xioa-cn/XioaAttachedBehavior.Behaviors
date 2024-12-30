@@ -135,6 +135,15 @@
                     Click="ClickBehavior_Window">
                     在点击元素时发生
                 </Button>
+                <Button
+                    Width="500"
+                    Height="40"
+                    Margin="10"
+                    behaviors:DoubleClickBehavior.Command="{Binding MyCommand}"
+                    behaviors:DoubleClickBehavior.CommandParameter="DoubleClickBehavior"
+                    Background="Gray">
+                    双击
+                </Button>
             </StackPanel>
         </ScrollViewer>
         <TextBlock
