@@ -96,7 +96,7 @@ xmlns:behaviors="clr-namespace:XioaAttachedBehavior.Behaviors;assembly=AttachedB
 
 ```xaml
 <Window x:Class="WPFAttachedBehavior.MainWindow"
-        xmlns:behaviors="clr-namespace:XioaAttachedBehavior;assembly=AttachedBehavior"
+        xmlns:behaviors="clr-namespace:XioaAttachedBehavior.Behaviors;assembly=AttachedBehavior"
         Title="WPF 附加行为示例"
         behaviors:LoadedBehavior.Command="{Binding InitCommand}">
     
